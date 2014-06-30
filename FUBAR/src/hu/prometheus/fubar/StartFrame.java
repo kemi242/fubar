@@ -103,7 +103,7 @@ public class StartFrame extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		lblKikJatszanak = new JLabel("KIK JÁTSZANAK?");
+		lblKikJatszanak = new JLabel("KIK J\u00C1TSZANAK?");
 		lblKikJatszanak.setHorizontalAlignment(SwingConstants.CENTER);
 		lblKikJatszanak.setForeground(Color.WHITE);
 		lblKikJatszanak.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
