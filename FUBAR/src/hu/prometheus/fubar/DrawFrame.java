@@ -11,6 +11,7 @@ import javax.swing.ImageIcon;
 
 import java.awt.Font;
 import java.awt.Color;
+import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -81,9 +82,9 @@ public class DrawFrame extends JFrame {
 		lblPlayer.setHorizontalAlignment(SwingConstants.CENTER);
 		lblPlayer.setForeground(Color.WHITE);
 		lblPlayer.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
-		lblPlayer.setBounds(10, 98, 444, 48);
+		lblPlayer.setBounds(80, 99, 320, 240);
 		lblPlayer.setText(player.getName());
-		lblPlayer.setIcon(new ImageIcon(player.getImage()));
+		lblPlayer.setIcon(new ImageIcon(player.getImage().getScaledInstance(320, 240, Image.SCALE_SMOOTH)));
 		contentPane.add(lblPlayer);
 		
 		lblKartyakez = new JLabel("");
