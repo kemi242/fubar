@@ -82,31 +82,31 @@ public class DataBase {
 			if (!c.getMetaData().getTables(null, null, "KerdesTippek", null).next()) {
 				s.executeUpdate("create table KerdesTippek (szoveg varchar(255));");
 				
-				s.executeUpdate("insert into KerdesTippek values ('Mi volt a legmerÃ©szebb dolog, amit valaha tettÃ©l?');");
-				s.executeUpdate("insert into KerdesTippek values ('Tetszik valaki a kÃ¶rben Ã¼lÅ‘k kÃ¶zÃ¼l?');");
-				s.executeUpdate("insert into KerdesTippek values ('Mi lennÃ©l, ha testfolyadÃ©k lennÃ©l?');");
-				s.executeUpdate("insert into KerdesTippek values ('Mi volt a legfurcsÃ¡bb Ã¡lmod?');");
-				s.executeUpdate("insert into KerdesTippek values ('A kÃ¶rben Ã¼lÅ‘k kÃ¶zÃ¼l kit fogadnÃ¡l el rabszolgÃ¡dkÃ©nt, Ã©s mit csinÃ¡ltatnÃ¡l vele?');");
-				s.executeUpdate("insert into KerdesTippek values ('Ha egy napig a mÃ¡sik nembÅ‘l valÃ³ lennÃ©l, milyen lennÃ©l kÃ¼lsÅ‘leg Ã©s belsÅ‘leg?');");
-				s.executeUpdate("insert into KerdesTippek values ('Mi volt a legfurcsÃ¡bb, legtitokzatosabb Ã©lmÃ©nyed az Ã©letedben?');");
-				s.executeUpdate("insert into KerdesTippek values ('Ki a pÃ©ldakÃ©ped, ki inspirÃ¡l leginkÃ¡bb?');");
-				s.executeUpdate("insert into KerdesTippek values ('Mi volt a legdurvÃ¡bb dolog, amit rÃ©szegen csinÃ¡ltÃ¡l?');");
-				s.executeUpdate("insert into KerdesTippek values ('Mi volt a legizgatÃ³bb szexvideÃ³, amit megnÃ©ztÃ©l?');");
-				s.executeUpdate("insert into KerdesTippek values ('Mi volt a legjobb vicc, amit hallottÃ¡l?');");
-				s.executeUpdate("insert into KerdesTippek values ('Ã–ltÃ¶ztÃ©l-e mÃ¡r az ellenkezÅ‘ nem viseletÃ©be?');");
-				s.executeUpdate("insert into KerdesTippek values ('Mi a legsÃ¶tÃ©tebb titkod, amit el mersz mondani?');");
+				s.executeUpdate("insert into KerdesTippek values ('Mi volt a legmerészebb dolog, amit valaha tettél?');");
+				s.executeUpdate("insert into KerdesTippek values ('Tetszik valaki a körben ülõk közül?');");
+				s.executeUpdate("insert into KerdesTippek values ('Mi lennél, ha testfolyadék lennél?');");
+				s.executeUpdate("insert into KerdesTippek values ('Mi volt a legfurcsább álmod?');");
+				s.executeUpdate("insert into KerdesTippek values ('A körben ülõk közül kit fogadnál el rabszolgádként, és mit csináltatnál vele?');");
+				s.executeUpdate("insert into KerdesTippek values ('Ha egy napig a másik nembõl való lennél, milyen lennél külsõleg és belsõleg?');");
+				s.executeUpdate("insert into KerdesTippek values ('Mi volt a legfurcsább, legtitokzatosabb élményed az életedben?');");
+				s.executeUpdate("insert into KerdesTippek values ('Ki a példaképed, ki inspirál leginkább?');");
+				s.executeUpdate("insert into KerdesTippek values ('Mi volt a legdurvább dolog, amit részegen csináltál?');");
+				s.executeUpdate("insert into KerdesTippek values ('Mi volt a legizgatóbb szexvideó, amit megnéztél?');");
+				s.executeUpdate("insert into KerdesTippek values ('Mi volt a legjobb vicc, amit hallottál?');");
+				s.executeUpdate("insert into KerdesTippek values ('Öltöztél-e már az ellenkezõ nem viseletébe?');");
+				s.executeUpdate("insert into KerdesTippek values ('Mi a legsötétebb titkod, amit el mersz mondani?');");
 				s.executeUpdate("insert into KerdesTippek values ('Mi volt a legcikibb beceneved?');");
-				s.executeUpdate("insert into KerdesTippek values ('Mit talÃ¡lsz leginkÃ¡bb vonzÃ³nak a mÃ¡sik nemben?');");
-				s.executeUpdate("insert into KerdesTippek values ('Ha vÃ¡laszthatnÃ¡l egy veled ellenkezÅ‘ nemÅ± idÅ‘s, igÃ©nytelen ember Ã©s egy veled megegyezÅ‘ nemÅ±, fiatal, igÃ©nyes ember kÃ¶zÃ¶tt, melyikkel fekÃ©dnÃ©l le inkÃ¡bb?');");
-				s.executeUpdate("insert into KerdesTippek values ('Mit vÃ¡lasztanÃ¡l: soha tÃ¶bbÃ© nem Ã©rinthetsz szÃ¡mÃ­tÃ³gÃ©pet, vagy soha tÃ¶bbÃ© nem Ã©rinthetsz ellenkezÅ‘ nemÅ±t?');");
-				s.executeUpdate("insert into KerdesTippek values ('Ki a legszexibb veled ellenkezÅ‘ nemÅ± hÃ­ressÃ©g, szerinted?');");
-				s.executeUpdate("insert into KerdesTippek values ('HÃ¡ny Ã©vesen csÃ³kolÃ³ztÃ¡l elÅ‘szÃ¶r?');");
-				s.executeUpdate("insert into KerdesTippek values ('Van-e olyan kÃ¼lÃ¶nleges dolog, ami tÃ©ged az Ã¡tlagnÃ¡l jobban idegesÃ­t?');");
-				s.executeUpdate("insert into KerdesTippek values ('Mi volt a legjobb kÃ¶nyv, amit olvastÃ¡l?');");
-				s.executeUpdate("insert into KerdesTippek values ('Hol lÃ¡tod magad 5 Ã©v mÃºlva?');");
-				s.executeUpdate("insert into KerdesTippek values ('Hogy zajlott Ã©leted legpocsÃ©kabb randija?');");
-				s.executeUpdate("insert into KerdesTippek values ('BorotvÃ¡lkozol\borotvÃ¡lkotÃ¡l-e (lÃ¡nyoknak: nyaktÃ³l fÃ¶lfelÃ©, fiÃºknak: nyaktÃ³l lefelÃ©?');");
-				s.executeUpdate("insert into KerdesTippek values ('Mi volt az Ã³vodai jeled?');");				
+				s.executeUpdate("insert into KerdesTippek values ('Mit találsz leginkább vonzónak a másik nemben?');");
+				s.executeUpdate("insert into KerdesTippek values ('Ha választhatnál egy veled ellenkezõ nemû idõs, igénytelen ember és egy veled megegyezõ nemû, fiatal, igényes ember között, melyikkel fekédnél le inkább?');");
+				s.executeUpdate("insert into KerdesTippek values ('Mit választanál: soha többé nem érinthetsz számítógépet, vagy soha többé nem érinthetsz ellenkezõ nemût?');");
+				s.executeUpdate("insert into KerdesTippek values ('Ki a legszexibb veled ellenkezõ nemû híresség, szerinted?');");
+				s.executeUpdate("insert into KerdesTippek values ('Hány évesen csókolóztál elõször?');");
+				s.executeUpdate("insert into KerdesTippek values ('Van-e olyan különleges dolog, ami téged az átlagnál jobban idegesít?');");
+				s.executeUpdate("insert into KerdesTippek values ('Mi volt a legjobb könyv, amit olvastál?');");
+				s.executeUpdate("insert into KerdesTippek values ('Hol látod magad 5 év múlva?');");
+				s.executeUpdate("insert into KerdesTippek values ('Hogy zajlott életed legpocsékabb randija?');");
+				s.executeUpdate("insert into KerdesTippek values ('Borotválkozol\borotválkotál-e (lányoknak: nyaktól fölfelé, fiúknak: nyaktól lefelé?');");
+				s.executeUpdate("insert into KerdesTippek values ('Mi volt az óvodai jeled?');");				
 			}
 			
 			
@@ -124,18 +124,18 @@ public class DataBase {
 			if (!c.getMetaData().getTables(null, null, "AkcioTippek", null).next()) {
 				s.executeUpdate("create table AkcioTippek (szoveg varchar(255));");
 				
-				s.executeUpdate("insert into AkcioTippek values ('Ã‰nekelj el egy slÃ¡gert, amit a tÃ¶bbiek vÃ¡lasztanak, zenÃ©re!');");
-				s.executeUpdate("insert into AkcioTippek values ('A tÃ¶bbiek egy deci hideg vizet Ã¶ntenek a fejedre, vagy a pÃ³lÃ³dra!');");
-				s.executeUpdate("insert into AkcioTippek values ('UtÃ¡nozz el egy Ã¡llatot, amit a tÃ¶bbiek kitalÃ¡lnak!');");
-				s.executeUpdate("insert into AkcioTippek values ('A tÃ¡rsasÃ¡g legfiatalabb tagjÃ¡t oda-vissza kell vinned a hÃ¡tadon nÃ©gykÃ©zlÃ¡b a folyosÃ³n! Ha te vagy a legfiatalabb, akkor a mÃ¡sodik legfiatalabbat!');");
-				s.executeUpdate("insert into AkcioTippek values ('A tÃ¡rsasÃ¡g legmÅ±vÃ©szibb tagja rajzoljon a homlokodra valamit!');");
-				s.executeUpdate("insert into AkcioTippek values ('MasszÃ­rozd meg annak a hÃ¡tÃ¡t a jÃ¡tÃ©kosok kÃ¶zÃ¼l, akinek leginkÃ¡bb szÃ¼ksÃ©ge van rÃ¡!');");
-				s.executeUpdate("insert into AkcioTippek values ('JÃ¡tssz el valakit a csapatbÃ³l, a tÃ¶bbiek pedig talÃ¡ljÃ¡k ki, hogy ki az!');");
-				s.executeUpdate("insert into AkcioTippek values ('FirkÃ¡ld fÃ¶l a legkÃ¶zelebbi alkalmas falra a telefonszÃ¡mod Ã©s a neved, valami kÃ­sÃ©rÅ‘szÃ¶veggel!');");
-				s.executeUpdate("insert into AkcioTippek values ('Szkanderezz a tÃ¡rsasÃ¡g legidÅ‘sebb fÃ©rfi tagjÃ¡val! Ha lÃ¡ny vagy, mindkÃ©t kezed hasznÃ¡lhatod!');");
-				s.executeUpdate("insert into AkcioTippek values ('Ha van Facebook profilod, Ã¡llÃ­tsd be a szerelmi Ã©rdeklÅ‘dÃ©sedet hasonlÃ³ nemÅ±re egy napig!');");
-				s.executeUpdate("insert into AkcioTippek values ('MerÃ­tsd a kezed csuklÃ³ig a WC vizÃ©be, majd mosd meg a mosdÃ³ban!');");
-				s.executeUpdate("insert into AkcioTippek values ('Nyalj meg egy szappant, majd mosd ki a szÃ¡d!');");			
+				s.executeUpdate("insert into AkcioTippek values ('Énekelj el egy slágert, amit a többiek választanak, zenére!');");
+				s.executeUpdate("insert into AkcioTippek values ('A többiek egy deci hideg vizet öntenek a fejedre, vagy a pólódra!');");
+				s.executeUpdate("insert into AkcioTippek values ('Utánozz el egy állatot, amit a többiek kitalálnak!');");
+				s.executeUpdate("insert into AkcioTippek values ('A társaság legfiatalabb tagját oda-vissza kell vinned a hátadon négykézláb a folyosón! Ha te vagy a legfiatalabb, akkor a második legfiatalabbat!');");
+				s.executeUpdate("insert into AkcioTippek values ('A társaság legmûvészibb tagja rajzoljon a homlokodra valamit!');");
+				s.executeUpdate("insert into AkcioTippek values ('Masszírozd meg annak a hátát a játékosok közül, akinek leginkább szüksége van rá!');");
+				s.executeUpdate("insert into AkcioTippek values ('Játssz el valakit a csapatból, a többiek pedig találják ki, hogy ki az!');");
+				s.executeUpdate("insert into AkcioTippek values ('Firkáld föl a legközelebbi alkalmas falra a telefonszámod és a neved, valami kísérõszöveggel!');");
+				s.executeUpdate("insert into AkcioTippek values ('Szkanderezz a társaság legidõsebb férfi tagjával! Ha lány vagy, mindkét kezed használhatod!');");
+				s.executeUpdate("insert into AkcioTippek values ('Ha van Facebook profilod, állítsd be a szerelmi érdeklõdésedet hasonló nemûre egy napig!');");
+				s.executeUpdate("insert into AkcioTippek values ('Merítsd a kezed csuklóig a WC vizébe, majd mosd meg a mosdóban!');");
+				s.executeUpdate("insert into AkcioTippek values ('Nyalj meg egy szappant, majd mosd ki a szád!');");			
 			}
 			
 			
@@ -154,27 +154,27 @@ public class DataBase {
 			if (!c.getMetaData().getTables(null, null, "IgyonAkiTippek", null).next()) {
 				s.executeUpdate("create table IgyonAkiTippek (szoveg varchar(255));");
 				
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki mÃ¡r vert el Ãºgy embert, hogy ottmaradt!');");
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki mÃ¡r rÃ©szesÃ¼lt olyan erÅ‘s verÃ©sben, hogy ottmaradt!');");
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki mÃ¡r Ã¶ltÃ¶zÃ¶tt Ã©s kifestette magÃ¡t ellenkezÅ‘ nemÅ±nek!');");
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki mÃ¡r volt EurÃ³pÃ¡n kÃ­vÃ¼l!');");
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki mÃ¡r csÃ³kolÃ³zott kÃ¼lfÃ¶ldivel!');");
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki mÃ¡r ivott annyit, hogy ne tudjon magÃ¡rÃ³l!');");
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki mÃ¡r ï¿½rt egy komplett zeneszï¿½mot!');");
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki mÃ¡r tÃ¶bb, mint 1 Ã©ve vezet naplÃ³t, vagy blogot!');");
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki mÃ¡r evett szusit!');");
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki mÃ¡r aludt sÃ¡torban 3, vagy tÃ¶bb Ã©jszakÃ¡n keresztÃ¼l!');");
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki mÃ¡r volt bungee-jumpingolni!');");
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki mÃ¡r Ã©lt Ã¡t, vagy lÃ¡tott megmagyarÃ¡zhatatlan esemÃ©nyt!');");
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki mÃ¡r esett Ã¡t mÅ±tÃ©ten!');");
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki mÃ¡r volt 1 Ã©vnÃ©l hosszabb idÅ‘szakig kapcsolatban!');");
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki mÃ¡r kapott komoly halÃ¡lfenyegetÃ©st!');");
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki mÃ¡r lÃ¡tott meghalni embert!');");
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki mÃ¡r sÃ­rt egy zeneszÃ¡m hatÃ¡sÃ¡ra!');");
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki mÃ¡r csinÃ¡lt kamu telefonhÃ­vÃ¡st!');");
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki lÅ‘tt mÃ¡r fegyverrel!');");
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki már vert el úgy embert, hogy ottmaradt!');");
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki már részesült olyan erõs verésben, hogy ottmaradt!');");
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki már öltözött és kifestette magát ellenkezõ nemûnek!');");
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki már volt Európán kívül!');");
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki már csókolózott külföldivel!');");
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki már ivott annyit, hogy ne tudjon magáról!');");
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki már ?rt egy komplett zenesz?mot!');");
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki már több, mint 1 éve vezet naplót, vagy blogot!');");
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki már evett szusit!');");
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki már aludt sátorban 3, vagy több éjszakán keresztül!');");
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki már volt bungee-jumpingolni!');");
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki már élt át, vagy látott megmagyarázhatatlan eseményt!');");
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki már esett át mûtéten!');");
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki már volt 1 évnél hosszabb idõszakig kapcsolatban!');");
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki már kapott komoly halálfenyegetést!');");
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki már látott meghalni embert!');");
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki már sírt egy zeneszám hatására!');");
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki már csinált kamu telefonhívást!');");
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki lõtt már fegyverrel!');");
 				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki szingli!');");
-				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki kÃ¶ltÃ¶tt mÃ¡r verset, vagy Ã­rt novellÃ¡t!');");				
+				s.executeUpdate("insert into IgyonAkiTippek values ('Igyon, aki költött már verset, vagy írt novellát!');");				
 			}
 			
 			
