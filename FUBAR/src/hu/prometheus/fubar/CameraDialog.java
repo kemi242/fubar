@@ -35,9 +35,9 @@ public class CameraDialog extends JDialog {
 	
 	private String name;
 
-	/**
+	/*
 	 * Launch the application.
-	 */
+	 *
 	public static void main(String[] args) {
 		try {
 			CameraDialog dialog = new CameraDialog("");
@@ -46,7 +46,7 @@ public class CameraDialog extends JDialog {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
+	}*/
 	
 
 	/**

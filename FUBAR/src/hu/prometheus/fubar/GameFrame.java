@@ -61,9 +61,9 @@ public class GameFrame extends JFrame {
 	private int lastx, lasty;
 	
 	
-	/**
+	/*
 	 * Launch the application.
-	 */
+	 *
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -75,12 +75,13 @@ public class GameFrame extends JFrame {
 				}
 			}
 		});
-	}
+	}*/
 
 	/**
 	 * Create the frame.
 	 */
 	public GameFrame() {
+		
 		setResizable(false);
 		setBounds(100, 100, 480, 800);
 		contentPane = new JPanel();
@@ -203,6 +204,8 @@ public class GameFrame extends JFrame {
 		playerLabels[7] = lblPlayer8;
 
 		arrangePlayers();
+		
+		SoundPlayer.play(StartFrame.class.getResource("/hu/prometheus/fubar/res/Hangulat.wav"));
 		
 	}
 	

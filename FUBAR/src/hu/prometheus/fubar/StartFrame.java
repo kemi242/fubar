@@ -70,9 +70,9 @@ public class StartFrame extends JFrame {
 	
 	//private LinkedList<Player> players;
 
-	/**
+	/*
 	 * Launch the application.
-	 */
+	 *
 	public static void main(String[] args) {
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -89,7 +89,7 @@ public class StartFrame extends JFrame {
 				}
 			}
 		});
-	}
+	}*/
 
 	/**
 	 * Create the frame.
@@ -561,8 +561,6 @@ public class StartFrame extends JFrame {
 		lblPicture8.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
 	}
 	protected void do_lblMehet_mouseClicked(MouseEvent e) {
-		SoundPlayer.play(StartFrame.class.getResource("/hu/prometheus/fubar/res/Kezdes.wav"));
-		
 		GameFrame gf = new GameFrame();
 		gf.setVisible(true);
 		this.setVisible(false);

@@ -22,9 +22,9 @@ public class AboutFrame extends JFrame {
 	private JTextArea txtrInfo;
 	private JLabel lblBackground;
 
-	/**
+	/*
 	 * Launch the application.
-	 */
+	 *
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -36,7 +36,7 @@ public class AboutFrame extends JFrame {
 				}
 			}
 		});
-	}
+	}*/
 
 	/**
 	 * Create the frame.

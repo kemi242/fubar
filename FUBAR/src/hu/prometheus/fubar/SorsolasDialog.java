@@ -21,9 +21,9 @@ public class SorsolasDialog extends JDialog {
 	private JLabel lblMegvolt;
 	private JLabel lblBar;
 
-	/**
+	/*
 	 * Launch the application.
-	 */
+	 *
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -36,7 +36,7 @@ public class SorsolasDialog extends JDialog {
 				}
 			}
 		});
-	}
+	}*/
 
 	/**
 	 * Create the dialog.

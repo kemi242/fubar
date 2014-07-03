@@ -26,9 +26,9 @@ public class EzJoDialog extends JDialog {
 	
 	private int tipus;
 
-	/**
+	/*
 	 * Launch the application.
-	 */
+	 *
 	public static void main(String[] args) {
 		try {
 			EzJoDialog dialog = new EzJoDialog(0);
@@ -37,7 +37,7 @@ public class EzJoDialog extends JDialog {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
+	}*/
 
 	/**
 	 * Create the dialog.

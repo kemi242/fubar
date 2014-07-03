@@ -21,9 +21,9 @@ public class MenuDialog extends JDialog {
 	private JLabel lblKiall;
 	private JLabel lblPadlo;
 
-	/**
+	/*
 	 * Launch the application.
-	 */
+	 *
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -35,7 +35,7 @@ public class MenuDialog extends JDialog {
 				}
 			}
 		});
-	}
+	}*/
 
 	/**
 	 * Create the frame.

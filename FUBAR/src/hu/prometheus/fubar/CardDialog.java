@@ -30,9 +30,9 @@ public class CardDialog extends JDialog {
 	private JLabel lblSorsolas;
 	private JLabel lblBar;
 
-	/**
+	/*
 	 * Launch the application.
-	 */
+	 *
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -45,7 +45,7 @@ public class CardDialog extends JDialog {
 				}
 			}
 		});
-	}
+	}*/
 
 	/**
 	 * Create the dialog.

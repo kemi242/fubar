@@ -35,9 +35,9 @@ public class NewPlayerDialog extends JDialog {
 	private JLabel lblPadlo;
 	private JLabel lblNum;
 
-	/**
+	/*
 	 * Launch the application.
-	 */
+	 *
 	public static void main(String[] args) {
 		try {
 			NewPlayerDialog dialog = new NewPlayerDialog();
@@ -46,7 +46,7 @@ public class NewPlayerDialog extends JDialog {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
+	}*/
 
 	/**
 	 * Create the dialog.

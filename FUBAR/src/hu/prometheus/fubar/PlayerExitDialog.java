@@ -36,9 +36,9 @@ public class PlayerExitDialog extends JDialog {
 	
 	private JLabel lblPadlo;
 
-	/**
+	/*
 	 * Launch the application.
-	 */
+	 *
 	public static void main(String[] args) {
 		try {
 			PlayerExitDialog dialog = new PlayerExitDialog();
@@ -47,7 +47,7 @@ public class PlayerExitDialog extends JDialog {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
+	}*/
 
 	/**
 	 * Create the dialog.

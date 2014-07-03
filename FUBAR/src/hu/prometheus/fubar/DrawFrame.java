@@ -37,9 +37,9 @@ public class DrawFrame extends JFrame {
 	private Timer timerKartyaHat;
 	private JLabel lblBar;
 
-	/**
+	/*
 	 * Launch the application.
-	 */
+	 *
 	public static void main(String[] args) {
 		
 		DataBase.init();
@@ -55,7 +55,7 @@ public class DrawFrame extends JFrame {
 				}
 			}
 		});
-	}
+	}*/
 
 	/**
 	 * Create the frame.
@@ -74,6 +74,12 @@ public class DrawFrame extends JFrame {
 				do_lblNincsjelen_mouseClicked(arg0);
 			}
 		});
+		
+		lblKartyahat = new JLabel("");
+		lblKartyahat.setIcon(new ImageIcon(DrawFrame.class.getResource("/hu/prometheus/fubar/res/Kartya hat.png")));
+		lblKartyahat.setBounds(100, 423, 149, 225);
+		lblKartyahat.setVisible(false);
+		contentPane.add(lblKartyahat);
 		lblNincsjelen.setIcon(new ImageIcon(DrawFrame.class.getResource("/hu/prometheus/fubar/res/Nincs jelen.png")));
 		lblNincsjelen.setBounds(83, 11, 314, 76);
 		contentPane.add(lblNincsjelen);
@@ -97,12 +103,6 @@ public class DrawFrame extends JFrame {
 		lblKartyakez.setIcon(new ImageIcon(DrawFrame.class.getResource("/hu/prometheus/fubar/res/Kartya kez.png")));
 		lblKartyakez.setBounds(0, 762, 350, 350);
 		contentPane.add(lblKartyakez);
-		
-		lblKartyahat = new JLabel("");
-		lblKartyahat.setIcon(new ImageIcon(DrawFrame.class.getResource("/hu/prometheus/fubar/res/Kartya hat.png")));
-		lblKartyahat.setBounds(100, 423, 149, 225);
-		lblKartyahat.setVisible(false);
-		contentPane.add(lblKartyahat);
 		
 		lblBar = new JLabel("");
 		lblBar.setIcon(new ImageIcon(DrawFrame.class.getResource("/hu/prometheus/fubar/res/Bar.jpg")));

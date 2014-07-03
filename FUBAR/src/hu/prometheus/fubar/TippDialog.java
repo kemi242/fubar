@@ -27,9 +27,9 @@ public class TippDialog extends JDialog {
 	private int tipus;
 	private JLabel lblEzjo;
 
-	/**
+	/*
 	 * Launch the application.
-	 */
+	 *
 	public static void main(String[] args) {
 		try {
 			TippDialog dialog = new TippDialog("", 0);
@@ -38,7 +38,7 @@ public class TippDialog extends JDialog {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
+	}*/
 
 	/**
 	 * Create the dialog.
