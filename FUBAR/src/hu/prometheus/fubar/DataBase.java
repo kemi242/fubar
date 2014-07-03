@@ -106,7 +106,9 @@ public class DataBase {
 				s.executeUpdate("insert into KerdesTippek values ('Hol látod magad 5 év múlva?');");
 				s.executeUpdate("insert into KerdesTippek values ('Hogy zajlott életed legpocsékabb randija?');");
 				s.executeUpdate("insert into KerdesTippek values ('Borotválkozol\borotválkotál-e (lányoknak: nyaktól fölfelé, fiúknak: nyaktól lefelé?');");
-				s.executeUpdate("insert into KerdesTippek values ('Mi volt az óvodai jeled?');");				
+				s.executeUpdate("insert into KerdesTippek values ('Mi volt az óvodai jeled?');");
+				s.executeUpdate("insert into KerdesTippek values ('Inkább lefeküdnél 4 topmodellel úgy, hogy nem mondhatnád el senkinek, vagy csak tabuk nélkül beszélgetnél velük egy hotelszobában úgy, hogy mindenki azt hiszi életed végéig, hogy lefeküdtél velük?');");
+				s.executeUpdate("insert into KerdesTippek values ('Inkább néznél pornót a szüleiddel, vagy a szüleidrõl?');");
 			}
 			
 			
@@ -135,7 +137,8 @@ public class DataBase {
 				s.executeUpdate("insert into AkcioTippek values ('Szkanderezz a társaság legidõsebb férfi tagjával! Ha lány vagy, mindkét kezed használhatod!');");
 				s.executeUpdate("insert into AkcioTippek values ('Ha van Facebook profilod, állítsd be a szerelmi érdeklõdésedet hasonló nemûre egy napig!');");
 				s.executeUpdate("insert into AkcioTippek values ('Merítsd a kezed csuklóig a WC vizébe, majd mosd meg a mosdóban!');");
-				s.executeUpdate("insert into AkcioTippek values ('Nyalj meg egy szappant, majd mosd ki a szád!');");			
+				s.executeUpdate("insert into AkcioTippek values ('Nyalj meg egy szappant, majd mosd ki a szád!');");
+				s.executeUpdate("insert into AkcioTippek values ('A telefonod menüjét tekergesd véletlenszerûen egy darabig, majd hívd föl azt a random embert, akinél megáll!');");
 			}
 			
 			
