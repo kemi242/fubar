@@ -1,5 +1,6 @@
 package hu.prometheus.fubar;
 
+import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -13,7 +14,10 @@ public class Player {
 	public Player(String name, String fileName) {
 		this.name = name;
 		try {
-			this.image = ImageIO.read(new File(fileName));
+			Image img = ImageIO.read(new File(fileName)).getScaledInstance(640, 480, Image.SCALE_SMOOTH);
+			this.image = new BufferedImage(640, 480, BufferedImage.TYPE_INT_RGB);
+			this.image.getGraphics().drawImage(img, 0, 0, null);
+			img = null;
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

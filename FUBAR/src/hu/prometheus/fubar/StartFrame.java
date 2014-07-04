@@ -511,6 +511,10 @@ public class StartFrame extends JFrame {
 			p = DataBase.getPlayer(name, this);
 		}
 		lblPicture8.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+		
+		GameFrame gf = new GameFrame();
+		gf.setVisible(true);
+		this.setVisible(false);
 	}
 	protected void do_lblPicture1_mouseClicked(MouseEvent arg0) {
 		String name = textField1.getText();
