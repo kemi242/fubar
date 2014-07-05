@@ -7,6 +7,7 @@ import java.awt.Image;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
@@ -16,6 +17,7 @@ import java.awt.Font;
 
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
+
 
 
 
@@ -118,8 +120,8 @@ public class StartFrame extends JFrame {
 		
 		textField1 = new JTextField();
 		textField1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				do_textField1_actionPerformed(arg0);
+			public void actionPerformed(ActionEvent e) {
+				do_textField1_actionPerformed(e);
 			}
 		});
 		textField1.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
@@ -146,8 +148,8 @@ public class StartFrame extends JFrame {
 		
 		textField2 = new JTextField();
 		textField2.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				do_textField2_actionPerformed(arg0);
+			public void actionPerformed(ActionEvent e) {
+				do_textField2_actionPerformed(e);
 			}
 		});
 		textField2.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
@@ -380,187 +382,65 @@ public class StartFrame extends JFrame {
 		return "select kepfajl from jatekosok where nev = '" + name + "';";
 	}
 	
-	private String makePicture() {
-		/*CameraDialog cd = new CameraDialog(name);
+	/*private String makePicture() {
+		/CameraDialog cd = new CameraDialog(name);
 		cd.setVisible(true);
 		
 		File f = new File(cd.fileName);
 		String fileName = f.getCanonicalPath();
-		return fileName;*/
+		return fileName;/
 		
 		FileDialog fd = new FileDialog(this);
 		fd.setVisible(true);
 		
 		return fd.getDirectory() + fd.getFile();
-	}
-	
-	protected void do_textField1_actionPerformed(ActionEvent e) {
-		String name = textField1.getText();
-		Player p;
-		if (!DataBase.playerExists(name)) {
-			String fileName = makePicture();
-			p = DataBase.insertPlayer(name, fileName);
-		} else {
-			p = DataBase.getPlayer(name, this);
-		}
-		lblPicture1.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
-		label2.setVisible(true);
-		textField2.setVisible(true);
-		lblPicture2.setVisible(true);
-		textField2.requestFocus();
-		
-	}
-	protected void do_textField2_actionPerformed(ActionEvent e) {
-		String name = textField2.getText();
-		Player p;
-		if (!DataBase.playerExists(name)) {
-			String fileName = makePicture();
-			p = DataBase.insertPlayer(name, fileName);
-		} else {
-			p = DataBase.getPlayer(name, this);
-		}
-		lblPicture2.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
-		label3.setVisible(true);
-		textField3.setVisible(true);
-		lblPicture3.setVisible(true);
-		textField3.requestFocus();
-	}
-	protected void do_textField3_actionPerformed(ActionEvent e) {
-		String name = textField3.getText();
-		Player p;
-		if (!DataBase.playerExists(name)) {
-			String fileName = makePicture();
-			p = DataBase.insertPlayer(name, fileName);
-		} else {
-			p = DataBase.getPlayer(name, this);
-		}
-		lblPicture3.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
-		label4.setVisible(true);
-		textField4.setVisible(true);
-		lblPicture4.setVisible(true);
-		textField4.requestFocus();
-		lblMehet.setVisible(true);
-	}
-	protected void do_textField4_actionPerformed(ActionEvent e) {
-		String name = textField4.getText();
-		Player p;
-		if (!DataBase.playerExists(name)) {
-			String fileName = makePicture();
-			p = DataBase.insertPlayer(name, fileName);
-		} else {
-			p = DataBase.getPlayer(name, this);
-		}
-		lblPicture4.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
-		label5.setVisible(true);
-		textField5.setVisible(true);
-		lblPicture5.setVisible(true);
-		textField5.requestFocus();
-	}
-	protected void do_textField5_actionPerformed(ActionEvent e) {
-		String name = textField5.getText();
-		Player p;
-		if (!DataBase.playerExists(name)) {
-			String fileName = makePicture();
-			p = DataBase.insertPlayer(name, fileName);
-		} else {
-			p = DataBase.getPlayer(name, this);
-		}
-		lblPicture5.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
-		label6.setVisible(true);
-		textField6.setVisible(true);
-		lblPicture6.setVisible(true);
-		textField6.requestFocus();
-	}
-	protected void do_textField6_actionPerformed(ActionEvent e) {
-		String name = textField6.getText();
-		Player p;
-		if (!DataBase.playerExists(name)) {
-			String fileName = makePicture();
-			p = DataBase.insertPlayer(name, fileName);
-		} else {
-			p = DataBase.getPlayer(name, this);
-		}
-		lblPicture6.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
-		label7.setVisible(true);
-		textField7.setVisible(true);
-		lblPicture7.setVisible(true);
-		textField7.requestFocus();
-	}
-	protected void do_textField7_actionPerformed(ActionEvent e) {
-		String name = textField7.getText();
-		Player p;
-		if (!DataBase.playerExists(name)) {
-			String fileName = makePicture();
-			p = DataBase.insertPlayer(name, fileName);
-		} else {
-			p = DataBase.getPlayer(name, this);
-		}
-		lblPicture7.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
-		label8.setVisible(true);
-		textField8.setVisible(true);
-		lblPicture8.setVisible(true);
-		textField8.requestFocus();
-	}
-	protected void do_textField8_actionPerformed(ActionEvent e) {
-		String name = textField8.getText();
-		Player p;
-		if (!DataBase.playerExists(name)) {
-			String fileName = makePicture();
-			p = DataBase.insertPlayer(name, fileName);
-		} else {
-			p = DataBase.getPlayer(name, this);
-		}
-		lblPicture8.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
-		
-		GameFrame gf = new GameFrame(true);
-		gf.setVisible(true);
-		this.setVisible(false);
-	}
+	}*/
+
 	protected void do_lblPicture1_mouseClicked(MouseEvent arg0) {
 		String name = textField1.getText();
-		String newFileName = makePicture();
+		String newFileName = DataBase.makePicture(this);
 		Player p = DataBase.updatePlayer(name, newFileName);
 		lblPicture1.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
 	}
 	protected void do_lblPicture2_mouseClicked(MouseEvent arg0) {
 		String name = textField2.getText();
-		String newFileName = makePicture();
+		String newFileName = DataBase.makePicture(this);
 		Player p = DataBase.updatePlayer(name, newFileName);
 		lblPicture2.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
 	}
 	protected void do_lblPicture3_mouseClicked(MouseEvent e) {
 		String name = textField3.getText();
-		String newFileName = makePicture();
+		String newFileName = DataBase.makePicture(this);
 		Player p = DataBase.updatePlayer(name, newFileName);
 		lblPicture3.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
 	}
 	protected void do_lblPicture4_mouseClicked(MouseEvent e) {
 		String name = textField4.getText();
-		String newFileName = makePicture();
+		String newFileName = DataBase.makePicture(this);
 		Player p = DataBase.updatePlayer(name, newFileName);
 		lblPicture4.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
 	}
 	protected void do_lblPicture5_mouseClicked(MouseEvent e) {
 		String name = textField5.getText();
-		String newFileName = makePicture();
+		String newFileName = DataBase.makePicture(this);
 		Player p = DataBase.updatePlayer(name, newFileName);
 		lblPicture5.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
 	}
 	protected void do_lblPicture6_mouseClicked(MouseEvent e) {
 		String name = textField6.getText();
-		String newFileName = makePicture();
+		String newFileName = DataBase.makePicture(this);
 		Player p = DataBase.updatePlayer(name, newFileName);
 		lblPicture6.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
 	}
 	protected void do_lblPicture7_mouseClicked(MouseEvent e) {
 		String name = textField7.getText();
-		String newFileName = makePicture();
+		String newFileName = DataBase.makePicture(this);
 		Player p = DataBase.updatePlayer(name, newFileName);
 		lblPicture7.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
 	}
 	protected void do_lblPicture8_mouseClicked(MouseEvent e) {
 		String name = textField8.getText();
-		String newFileName = makePicture();
+		String newFileName = DataBase.makePicture(this);
 		Player p = DataBase.updatePlayer(name, newFileName);
 		lblPicture8.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
 	}
@@ -568,5 +448,90 @@ public class StartFrame extends JFrame {
 		GameFrame gf = new GameFrame(true);
 		gf.setVisible(true);
 		this.setVisible(false);
+	}
+	
+	private void addPlayer(JTextField textField) {		
+		try {
+			Player p = DataBase.addPlayer(textField.getText(), this);
+
+			if (textField.equals(textField1)) {
+				lblPicture1.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+				label2.setVisible(true);
+				textField2.setVisible(true);
+				lblPicture2.setVisible(true);
+				textField2.requestFocus();
+			} else if (textField.equals(textField2)) {
+				lblPicture2.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+				label3.setVisible(true);
+				textField3.setVisible(true);
+				lblPicture3.setVisible(true);
+				textField3.requestFocus();
+			} else if (textField.equals(textField3)) {
+				lblPicture3.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+				label4.setVisible(true);
+				textField4.setVisible(true);
+				lblPicture4.setVisible(true);
+				textField4.requestFocus();
+				lblMehet.setVisible(true);
+			} else if (textField.equals(textField4)) {
+				lblPicture4.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+				label5.setVisible(true);
+				textField5.setVisible(true);
+				lblPicture5.setVisible(true);
+				textField5.requestFocus();
+			} else if (textField.equals(textField5)) {
+				lblPicture5.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+				label6.setVisible(true);
+				textField6.setVisible(true);
+				lblPicture6.setVisible(true);
+				textField6.requestFocus();
+			} else if (textField.equals(textField6)) {
+				lblPicture6.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+				label7.setVisible(true);
+				textField7.setVisible(true);
+				lblPicture7.setVisible(true);
+				textField7.requestFocus();
+			} else if (textField.equals(textField7)) {
+				lblPicture7.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+				label8.setVisible(true);
+				textField8.setVisible(true);
+				lblPicture8.setVisible(true);
+				textField8.requestFocus();
+			} else if (textField.equals(textField8)) {
+				lblPicture8.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+				GameFrame gf = new GameFrame(true);
+				gf.setVisible(true);
+				this.setVisible(false);
+			}
+			
+		} catch (PlayerExistsException e) {
+			JOptionPane.showMessageDialog(this, e.getMessage());
+			textField.setText("");
+		}
+	}
+	
+	protected void do_textField1_actionPerformed(ActionEvent e) {
+		addPlayer(textField1);
+	}
+	protected void do_textField2_actionPerformed(ActionEvent e) {
+		addPlayer(textField2);
+	}
+	protected void do_textField3_actionPerformed(ActionEvent e) {
+		addPlayer(textField3);
+	}
+	protected void do_textField4_actionPerformed(ActionEvent e) {
+		addPlayer(textField4);
+	}
+	protected void do_textField5_actionPerformed(ActionEvent e) {
+		addPlayer(textField5);
+	}
+	protected void do_textField6_actionPerformed(ActionEvent e) {
+		addPlayer(textField6);
+	}
+	protected void do_textField7_actionPerformed(ActionEvent e) {
+		addPlayer(textField7);
+	}
+	protected void do_textField8_actionPerformed(ActionEvent e) {
+		addPlayer(textField8);
 	}
 }

@@ -19,6 +19,15 @@ public class DataBase {
 	public static ArrayList<String> kerdesTippek;
 	public static ArrayList<String> akcioTippek;
 	public static ArrayList<String> igyonAkiTippek;
+	
+	public static boolean hasDuplicates(Player p) {
+		int count = 0;
+		for (Player player: players) {
+			if (player.equals(p)) count++;
+		}
+		if (count > 1) return true;
+		return false;
+	}
 
 	public static void init() {
 		File f = new File("fubar.db");
@@ -243,14 +252,18 @@ public class DataBase {
 		
 	}
 	
-	public static Player insertPlayer(String name, String fileName) {
-		Player p = new Player(name, fileName);
-		players.add(p);
+	/*public static Player insertPlayer(String name, String fileName) {
+		
+		Player p = null;
+		
 		try {
 			Connection c = DriverManager.getConnection("jdbc:sqlite:fubar.db");
 			Statement s = c.createStatement();
 			s.executeUpdate("insert into jatekosok values ('" + name + "', '" + fileName + "');");
-			c.close();
+			c.close();			
+			p = new Player(name, fileName);
+			players.add(p);
+			
 		} catch (Exception ex) {
 			// TODO Auto-generated catch block
 			ex.printStackTrace();
@@ -280,6 +293,62 @@ public class DataBase {
 			e.printStackTrace();
 		}
 		return null;
+	}*/
+	
+	
+	public static String makePicture(JFrame frame) {
+		/*CameraDialog cd = new CameraDialog(name);
+		cd.setVisible(true);
+		
+		File f = new File(cd.fileName);
+		String fileName = f.getCanonicalPath();
+		return fileName;*/
+		
+		FileDialog fd = new FileDialog(frame);
+		fd.setVisible(true);
+		return fd.getDirectory() + fd.getFile();
+	}
+	
+	private static String checkFile(String fileName, JFrame frame) {
+		if ((new File(fileName)).exists()) {
+			return fileName;
+		}
+		return makePicture(frame);
+	}
+	
+	public static Player addPlayer(String name, JFrame frame) throws PlayerExistsException {
+		
+		for (Player player: players) {
+			if (player.getName().equals(name)) {
+				throw new PlayerExistsException("A megadott néven már van regisztrálva játékos.");
+			}
+		}
+		
+		Connection c;
+		try {
+			c = DriverManager.getConnection("jdbc:sqlite:fubar.db");
+			Statement s = c.createStatement();
+			
+			ResultSet rs = s.executeQuery(String.format("select * from jatekosok where nev = '%s'", name));
+			if (rs.next()) {
+				String fileName = checkFile(rs.getString(2), frame);
+				Player p = new Player(name, fileName);
+				players.add(p);
+				return p;
+			}
+			
+			String fileName = makePicture(frame);
+			s.executeUpdate(String.format("insert into jatekosok values ('%s', '%s')", name, fileName));
+			Player p = new Player(name, fileName);
+			players.add(p);
+			return p;
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+		
 	}
 	
 	public static boolean playerExists(String name) {
