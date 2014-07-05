@@ -177,5 +177,6 @@ public class CardDialog extends JDialog {
 		gf.sorsol = true;
 		gf.setVisible(true);
 		this.dispose();
+		SoundPlayer.play(MainFrame.class.getResource("/hu/prometheus/fubar/res/Sorsol.wav"));
 	}
 }

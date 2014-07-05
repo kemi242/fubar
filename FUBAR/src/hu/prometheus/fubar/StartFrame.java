@@ -512,7 +512,7 @@ public class StartFrame extends JFrame {
 		}
 		lblPicture8.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
 		
-		GameFrame gf = new GameFrame();
+		GameFrame gf = new GameFrame(true);
 		gf.setVisible(true);
 		this.setVisible(false);
 	}
@@ -565,7 +565,7 @@ public class StartFrame extends JFrame {
 		lblPicture8.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
 	}
 	protected void do_lblMehet_mouseClicked(MouseEvent e) {
-		GameFrame gf = new GameFrame();
+		GameFrame gf = new GameFrame(true);
 		gf.setVisible(true);
 		this.setVisible(false);
 	}

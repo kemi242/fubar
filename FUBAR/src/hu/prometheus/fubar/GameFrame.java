@@ -60,7 +60,6 @@ public class GameFrame extends JFrame {
 	private Line perp;
 	private int lastx, lasty;
 	
-	
 	/*
 	 * Launch the application.
 	 *
@@ -204,10 +203,140 @@ public class GameFrame extends JFrame {
 		playerLabels[7] = lblPlayer8;
 
 		arrangePlayers();
+	}
+	
+public GameFrame(boolean start) {
 		
-		SoundPlayer.play(StartFrame.class.getResource("/hu/prometheus/fubar/res/Hangulat.wav"));
+		setResizable(false);
+		setBounds(100, 100, 480, 800);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		lblPalack = new JLabel("");
+		lblPalack.setVerticalAlignment(SwingConstants.TOP);
+		lblPalack.setHorizontalAlignment(SwingConstants.LEFT);
+		lblPalack.addMouseMotionListener(new MouseMotionAdapter() {
+			@Override
+			public void mouseDragged(MouseEvent arg0) {
+				do_lblPalack_mouseDragged(arg0);
+			}
+		});
+		lblPalack.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				do_lblPalack_mouseReleased(e);
+			}
+		});
+		lblPalack.setIcon(new ImageIcon(GameFrame.class.getResource("/hu/prometheus/fubar/res/Palack.png")));
+		lblPalack.setBounds(165, 325, 150, 150);
+		contentPane.add(lblPalack);
+		
+		lblPlayer1 = new JLabel("");
+		lblPlayer1.setBounds(0, 0, 64, 48);
+		contentPane.add(lblPlayer1);
+		
+		lblPlayer2 = new JLabel("");
+		lblPlayer2.setBounds(0, 0, 64, 48);
+		contentPane.add(lblPlayer2);
+		
+		lblPlayer3 = new JLabel("");
+		lblPlayer3.setBounds(0, 0, 64, 48);
+		contentPane.add(lblPlayer3);
+		
+		lblPlayer4 = new JLabel("");
+		lblPlayer4.setBounds(0, 0, 64, 48);
+		contentPane.add(lblPlayer4);
+		
+		lblPlayer5 = new JLabel("");
+		lblPlayer5.setBounds(0, 0, 64, 48);
+		contentPane.add(lblPlayer5);
+		
+		lblPlayer6 = new JLabel("");
+		lblPlayer6.setBounds(0, 0, 64, 48);
+		contentPane.add(lblPlayer6);
+		
+		lblPlayer7 = new JLabel("");
+		lblPlayer7.setBackground(Color.BLACK);
+		lblPlayer7.setBounds(0, 0, 64, 48);
+		contentPane.add(lblPlayer7);
+		
+		lblPlayer8 = new JLabel("");
+		lblPlayer8.setBounds(0, 0, 64, 48);
+		contentPane.add(lblPlayer8);
+		
+		lblMenu = new JLabel("");
+		lblMenu.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				do_lblMenu_mouseClicked(e);
+			}
+		});
+		lblMenu.setIcon(new ImageIcon(GameFrame.class.getResource("/hu/prometheus/fubar/res/Men\u00FC gomb.png")));
+		lblMenu.setBounds(10, 696, 126, 65);
+		contentPane.add(lblMenu);
+		
+		lblPadlo = new JLabel("");
+		lblPadlo.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				do_lblPadlo_mousePressed(e);
+			}
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				do_lblPadlo_mouseReleased(e);
+			}
+		});
+		lblPadlo.addMouseMotionListener(new MouseMotionAdapter() {
+			@Override
+			public void mouseDragged(MouseEvent e) {
+				do_lblPadlo_mouseDragged(e);
+			}
+		});
+		lblPadlo.setIcon(new ImageIcon(GameFrame.class.getResource("/hu/prometheus/fubar/res/Padlo.png")));
+		lblPadlo.setBounds(0, 0, 480, 800);
+		contentPane.add(lblPadlo);
+		
+		timerPalack = new Timer(10, new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				do_timerPalack_actionPerformed();
+			}
+			
+		});
+		
+		sorsol = false;
+		
+		deg = 0;
+		prevX = 0;
+		
+		bottle = new Line(this.getWidth() / 2, this.getHeight() / 2, deg);
+		
+		img = ((ImageIcon)lblPalack.getIcon()).getImage();
+		
+		
+		playerLabels = new JLabel[8];
+		
+		playerLabels[0] = lblPlayer1;
+		playerLabels[1] = lblPlayer2;
+		playerLabels[2] = lblPlayer3;
+		playerLabels[3] = lblPlayer4;
+		playerLabels[4] = lblPlayer5;
+		playerLabels[5] = lblPlayer6;
+		playerLabels[6] = lblPlayer7;
+		playerLabels[7] = lblPlayer8;
+
+		arrangePlayers();
+		
+		if (start) {
+			SoundPlayer.play(StartFrame.class.getResource("/hu/prometheus/fubar/res/Hangulat.wav"));
+		}
 		
 	}
+	
+	
 	
 	private void arrange3() {
 		lblPlayer1.setBounds(208, 167, 64, 48);
