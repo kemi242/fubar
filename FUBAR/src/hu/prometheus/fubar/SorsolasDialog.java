@@ -48,14 +48,14 @@ public class SorsolasDialog extends JDialog {
 		getContentPane().setLayout(null);
 		
 		lblPlayerpic = new JLabel("");
-		lblPlayerpic.setBounds(80, 11, 320, 240);
+		lblPlayerpic.setBounds(92, 11, 300, 300);
 		getContentPane().add(lblPlayerpic);
 		
 		lblPlayer = new JLabel("Player");
 		lblPlayer.setHorizontalAlignment(SwingConstants.CENTER);
 		lblPlayer.setForeground(Color.WHITE);
 		lblPlayer.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
-		lblPlayer.setBounds(10, 262, 444, 23);
+		lblPlayer.setBounds(20, 322, 444, 23);
 		getContentPane().add(lblPlayer);
 		
 		lblMegvolt = new JLabel("");
@@ -74,7 +74,7 @@ public class SorsolasDialog extends JDialog {
 		lblBar.setBounds(0, 0, 480, 800);
 		getContentPane().add(lblBar);
 		
-		lblPlayerpic.setIcon(new ImageIcon(player.getImage().getScaledInstance(320, 240, Image.SCALE_SMOOTH)));
+		lblPlayerpic.setIcon(new ImageIcon(player.getImage().getScaledInstance(300, 300, Image.SCALE_SMOOTH)));
 		lblPlayer.setText(player.getName());
 
 	}

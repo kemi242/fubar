@@ -115,7 +115,7 @@ public class StartFrame extends JFrame {
 		label1 = new JLabel("1.");
 		label1.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
 		label1.setForeground(Color.WHITE);
-		label1.setBounds(10, 73, 14, 20);
+		label1.setBounds(34, 69, 11, 23);
 		contentPane.add(label1);
 		
 		textField1 = new JTextField();
@@ -125,7 +125,7 @@ public class StartFrame extends JFrame {
 			}
 		});
 		textField1.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
-		textField1.setBounds(34, 70, 356, 26);
+		textField1.setBounds(55, 67, 329, 26);
 		contentPane.add(textField1);
 		textField1.setColumns(10);
 		
@@ -137,13 +137,13 @@ public class StartFrame extends JFrame {
 			}
 		});
 		lblPicture1.setIcon(null);
-		lblPicture1.setBounds(400, 45, 64, 48);
+		lblPicture1.setBounds(394, 45, 70, 70);
 		contentPane.add(lblPicture1);
 		
 		label2 = new JLabel("2.");
 		label2.setForeground(Color.WHITE);
 		label2.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
-		label2.setBounds(10, 132, 14, 20);
+		label2.setBounds(34, 150, 14, 23);
 		contentPane.add(label2);
 		
 		textField2 = new JTextField();
@@ -154,7 +154,7 @@ public class StartFrame extends JFrame {
 		});
 		textField2.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
 		textField2.setColumns(10);
-		textField2.setBounds(34, 129, 356, 26);
+		textField2.setBounds(58, 148, 326, 26);
 		contentPane.add(textField2);
 		
 		lblPicture2 = new JLabel("");
@@ -164,13 +164,13 @@ public class StartFrame extends JFrame {
 				do_lblPicture2_mouseClicked(arg0);
 			}
 		});
-		lblPicture2.setBounds(400, 104, 64, 48);
+		lblPicture2.setBounds(394, 126, 70, 70);
 		contentPane.add(lblPicture2);
 		
 		label3 = new JLabel("3.");
 		label3.setForeground(Color.WHITE);
 		label3.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
-		label3.setBounds(10, 191, 14, 20);
+		label3.setBounds(34, 231, 350, 23);
 		contentPane.add(label3);
 		
 		textField3 = new JTextField();
@@ -181,7 +181,7 @@ public class StartFrame extends JFrame {
 		});
 		textField3.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
 		textField3.setColumns(10);
-		textField3.setBounds(34, 188, 356, 26);
+		textField3.setBounds(58, 229, 326, 26);
 		contentPane.add(textField3);
 		
 		lblPicture3 = new JLabel("");
@@ -191,13 +191,13 @@ public class StartFrame extends JFrame {
 				do_lblPicture3_mouseClicked(e);
 			}
 		});
-		lblPicture3.setBounds(400, 163, 64, 48);
+		lblPicture3.setBounds(394, 207, 70, 70);
 		contentPane.add(lblPicture3);
 		
 		label4 = new JLabel("4.");
 		label4.setForeground(Color.WHITE);
 		label4.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
-		label4.setBounds(10, 250, 14, 20);
+		label4.setBounds(34, 312, 14, 23);
 		contentPane.add(label4);
 		
 		textField4 = new JTextField();
@@ -208,7 +208,7 @@ public class StartFrame extends JFrame {
 		});
 		textField4.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
 		textField4.setColumns(10);
-		textField4.setBounds(34, 247, 356, 26);
+		textField4.setBounds(58, 310, 326, 26);
 		contentPane.add(textField4);
 		
 		lblPicture4 = new JLabel("");
@@ -218,13 +218,13 @@ public class StartFrame extends JFrame {
 				do_lblPicture4_mouseClicked(e);
 			}
 		});
-		lblPicture4.setBounds(400, 222, 64, 48);
+		lblPicture4.setBounds(394, 288, 70, 70);
 		contentPane.add(lblPicture4);
 		
 		label5 = new JLabel("5.");
 		label5.setForeground(Color.WHITE);
 		label5.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
-		label5.setBounds(10, 309, 14, 20);
+		label5.setBounds(34, 393, 14, 23);
 		contentPane.add(label5);
 		
 		textField5 = new JTextField();
@@ -235,7 +235,7 @@ public class StartFrame extends JFrame {
 		});
 		textField5.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
 		textField5.setColumns(10);
-		textField5.setBounds(34, 306, 356, 26);
+		textField5.setBounds(58, 391, 326, 26);
 		contentPane.add(textField5);
 		
 		lblPicture5 = new JLabel("");
@@ -245,13 +245,13 @@ public class StartFrame extends JFrame {
 				do_lblPicture5_mouseClicked(e);
 			}
 		});
-		lblPicture5.setBounds(400, 281, 64, 48);
+		lblPicture5.setBounds(394, 369, 70, 70);
 		contentPane.add(lblPicture5);
 		
 		label6 = new JLabel("6.");
 		label6.setForeground(Color.WHITE);
 		label6.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
-		label6.setBounds(10, 368, 14, 20);
+		label6.setBounds(34, 475, 14, 23);
 		contentPane.add(label6);
 		
 		textField6 = new JTextField();
@@ -262,7 +262,7 @@ public class StartFrame extends JFrame {
 		});
 		textField6.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
 		textField6.setColumns(10);
-		textField6.setBounds(34, 365, 356, 26);
+		textField6.setBounds(58, 472, 326, 26);
 		contentPane.add(textField6);
 		
 		lblPicture6 = new JLabel("");
@@ -272,13 +272,13 @@ public class StartFrame extends JFrame {
 				do_lblPicture6_mouseClicked(e);
 			}
 		});
-		lblPicture6.setBounds(400, 340, 64, 48);
+		lblPicture6.setBounds(394, 450, 70, 70);
 		contentPane.add(lblPicture6);
 		
 		label7 = new JLabel("7.");
 		label7.setForeground(Color.WHITE);
 		label7.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
-		label7.setBounds(10, 427, 14, 20);
+		label7.setBounds(34, 555, 14, 23);
 		contentPane.add(label7);
 		
 		textField7 = new JTextField();
@@ -289,7 +289,7 @@ public class StartFrame extends JFrame {
 		});
 		textField7.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
 		textField7.setColumns(10);
-		textField7.setBounds(34, 424, 356, 26);
+		textField7.setBounds(58, 553, 326, 26);
 		contentPane.add(textField7);
 		
 		lblPicture7 = new JLabel("");
@@ -299,13 +299,13 @@ public class StartFrame extends JFrame {
 				do_lblPicture7_mouseClicked(e);
 			}
 		});
-		lblPicture7.setBounds(400, 399, 64, 48);
+		lblPicture7.setBounds(394, 531, 70, 70);
 		contentPane.add(lblPicture7);
 		
 		label8 = new JLabel("8.");
 		label8.setForeground(Color.WHITE);
 		label8.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
-		label8.setBounds(10, 483, 14, 20);
+		label8.setBounds(34, 632, 14, 23);
 		contentPane.add(label8);
 		
 		textField8 = new JTextField();
@@ -316,7 +316,7 @@ public class StartFrame extends JFrame {
 		});
 		textField8.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
 		textField8.setColumns(10);
-		textField8.setBounds(34, 480, 356, 26);
+		textField8.setBounds(58, 630, 326, 26);
 		contentPane.add(textField8);
 		
 		lblPicture8 = new JLabel("");
@@ -326,7 +326,7 @@ public class StartFrame extends JFrame {
 				do_lblPicture8_mouseClicked(e);
 			}
 		});
-		lblPicture8.setBounds(400, 455, 64, 48);
+		lblPicture8.setBounds(394, 612, 70, 70);
 		contentPane.add(lblPicture8);
 		
 		lblMehet = new JLabel("");
@@ -347,7 +347,6 @@ public class StartFrame extends JFrame {
 		
 		label2.setVisible(false);
 		textField2.setVisible(false);
-		lblPicture2.setVisible(false);
 		
 		label3.setVisible(false);
 		textField3.setVisible(false);
@@ -400,49 +399,49 @@ public class StartFrame extends JFrame {
 		String name = textField1.getText();
 		String newFileName = DataBase.makePicture(this);
 		Player p = DataBase.updatePlayer(name, newFileName);
-		lblPicture1.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+		lblPicture1.setIcon(new ImageIcon(p.getImage().getScaledInstance(70, 70, Image.SCALE_SMOOTH)));
 	}
 	protected void do_lblPicture2_mouseClicked(MouseEvent arg0) {
 		String name = textField2.getText();
 		String newFileName = DataBase.makePicture(this);
 		Player p = DataBase.updatePlayer(name, newFileName);
-		lblPicture2.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+		lblPicture2.setIcon(new ImageIcon(p.getImage().getScaledInstance(70, 70, Image.SCALE_SMOOTH)));
 	}
 	protected void do_lblPicture3_mouseClicked(MouseEvent e) {
 		String name = textField3.getText();
 		String newFileName = DataBase.makePicture(this);
 		Player p = DataBase.updatePlayer(name, newFileName);
-		lblPicture3.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+		lblPicture3.setIcon(new ImageIcon(p.getImage().getScaledInstance(70, 70, Image.SCALE_SMOOTH)));
 	}
 	protected void do_lblPicture4_mouseClicked(MouseEvent e) {
 		String name = textField4.getText();
 		String newFileName = DataBase.makePicture(this);
 		Player p = DataBase.updatePlayer(name, newFileName);
-		lblPicture4.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+		lblPicture4.setIcon(new ImageIcon(p.getImage().getScaledInstance(70, 70, Image.SCALE_SMOOTH)));
 	}
 	protected void do_lblPicture5_mouseClicked(MouseEvent e) {
 		String name = textField5.getText();
 		String newFileName = DataBase.makePicture(this);
 		Player p = DataBase.updatePlayer(name, newFileName);
-		lblPicture5.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+		lblPicture5.setIcon(new ImageIcon(p.getImage().getScaledInstance(70, 70, Image.SCALE_SMOOTH)));
 	}
 	protected void do_lblPicture6_mouseClicked(MouseEvent e) {
 		String name = textField6.getText();
 		String newFileName = DataBase.makePicture(this);
 		Player p = DataBase.updatePlayer(name, newFileName);
-		lblPicture6.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+		lblPicture6.setIcon(new ImageIcon(p.getImage().getScaledInstance(70, 70, Image.SCALE_SMOOTH)));
 	}
 	protected void do_lblPicture7_mouseClicked(MouseEvent e) {
 		String name = textField7.getText();
 		String newFileName = DataBase.makePicture(this);
 		Player p = DataBase.updatePlayer(name, newFileName);
-		lblPicture7.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+		lblPicture7.setIcon(new ImageIcon(p.getImage().getScaledInstance(70, 70, Image.SCALE_SMOOTH)));
 	}
 	protected void do_lblPicture8_mouseClicked(MouseEvent e) {
 		String name = textField8.getText();
 		String newFileName = DataBase.makePicture(this);
 		Player p = DataBase.updatePlayer(name, newFileName);
-		lblPicture8.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+		lblPicture8.setIcon(new ImageIcon(p.getImage().getScaledInstance(70, 70, Image.SCALE_SMOOTH)));
 	}
 	protected void do_lblMehet_mouseClicked(MouseEvent e) {
 		GameFrame gf = new GameFrame(true);
@@ -455,50 +454,50 @@ public class StartFrame extends JFrame {
 			Player p = DataBase.addPlayer(textField.getText(), this);
 
 			if (textField.equals(textField1)) {
-				lblPicture1.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+				lblPicture1.setIcon(new ImageIcon(p.getImage().getScaledInstance(70, 70, Image.SCALE_SMOOTH)));
 				label2.setVisible(true);
 				textField2.setVisible(true);
 				lblPicture2.setVisible(true);
 				textField2.requestFocus();
 			} else if (textField.equals(textField2)) {
-				lblPicture2.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+				lblPicture2.setIcon(new ImageIcon(p.getImage().getScaledInstance(70, 70, Image.SCALE_SMOOTH)));
 				label3.setVisible(true);
 				textField3.setVisible(true);
 				lblPicture3.setVisible(true);
 				textField3.requestFocus();
 			} else if (textField.equals(textField3)) {
-				lblPicture3.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+				lblPicture3.setIcon(new ImageIcon(p.getImage().getScaledInstance(70, 70, Image.SCALE_SMOOTH)));
 				label4.setVisible(true);
 				textField4.setVisible(true);
 				lblPicture4.setVisible(true);
 				textField4.requestFocus();
 				lblMehet.setVisible(true);
 			} else if (textField.equals(textField4)) {
-				lblPicture4.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+				lblPicture4.setIcon(new ImageIcon(p.getImage().getScaledInstance(70, 70, Image.SCALE_SMOOTH)));
 				label5.setVisible(true);
 				textField5.setVisible(true);
 				lblPicture5.setVisible(true);
 				textField5.requestFocus();
 			} else if (textField.equals(textField5)) {
-				lblPicture5.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+				lblPicture5.setIcon(new ImageIcon(p.getImage().getScaledInstance(70, 70, Image.SCALE_SMOOTH)));
 				label6.setVisible(true);
 				textField6.setVisible(true);
 				lblPicture6.setVisible(true);
 				textField6.requestFocus();
 			} else if (textField.equals(textField6)) {
-				lblPicture6.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+				lblPicture6.setIcon(new ImageIcon(p.getImage().getScaledInstance(70, 70, Image.SCALE_SMOOTH)));
 				label7.setVisible(true);
 				textField7.setVisible(true);
 				lblPicture7.setVisible(true);
 				textField7.requestFocus();
 			} else if (textField.equals(textField7)) {
-				lblPicture7.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+				lblPicture7.setIcon(new ImageIcon(p.getImage().getScaledInstance(70, 70, Image.SCALE_SMOOTH)));
 				label8.setVisible(true);
 				textField8.setVisible(true);
 				lblPicture8.setVisible(true);
 				textField8.requestFocus();
 			} else if (textField.equals(textField8)) {
-				lblPicture8.setIcon(new ImageIcon(p.getImage().getScaledInstance(64, 48, Image.SCALE_SMOOTH)));
+				lblPicture8.setIcon(new ImageIcon(p.getImage().getScaledInstance(70, 70, Image.SCALE_SMOOTH)));
 				GameFrame gf = new GameFrame(true);
 				gf.setVisible(true);
 				this.setVisible(false);

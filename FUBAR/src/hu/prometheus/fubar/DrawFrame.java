@@ -81,16 +81,16 @@ public class DrawFrame extends JFrame {
 		lblKartyahat.setVisible(false);
 		contentPane.add(lblKartyahat);
 		lblNincsjelen.setIcon(new ImageIcon(DrawFrame.class.getResource("/hu/prometheus/fubar/res/Nincs jelen.png")));
-		lblNincsjelen.setBounds(83, 11, 314, 76);
+		lblNincsjelen.setBounds(75, 14, 314, 76);
 		contentPane.add(lblNincsjelen);
 		
 		lblPlayer = new JLabel("");
 		lblPlayer.setHorizontalAlignment(SwingConstants.CENTER);
 		lblPlayer.setForeground(Color.WHITE);
 		lblPlayer.setFont(new Font("Comic Sans MS", Font.PLAIN, 16));
-		lblPlayer.setBounds(80, 99, 320, 240);
+		lblPlayer.setBounds(82, 101, 300, 300);
 		lblPlayer.setText(player.getName());
-		lblPlayer.setIcon(new ImageIcon(player.getImage().getScaledInstance(320, 240, Image.SCALE_SMOOTH)));
+		lblPlayer.setIcon(new ImageIcon(player.getImage().getScaledInstance(300, 300, Image.SCALE_SMOOTH)));
 		contentPane.add(lblPlayer);
 		
 		lblKartyakez = new JLabel("");

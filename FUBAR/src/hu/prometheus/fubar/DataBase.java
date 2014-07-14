@@ -304,9 +304,13 @@ public class DataBase {
 		String fileName = f.getCanonicalPath();
 		return fileName;*/
 		
-		FileDialog fd = new FileDialog(frame);
+		/*FileDialog fd = new FileDialog(frame);
 		fd.setVisible(true);
-		return fd.getDirectory() + fd.getFile();
+		return fd.getDirectory() + fd.getFile();*/
+		ImageCropperDialog icd = new ImageCropperDialog();
+		icd.setModal(true);
+		icd.setVisible(true);
+		return icd.fileName;
 	}
 	
 	private static String checkFile(String fileName, JFrame frame) {
