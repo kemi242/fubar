@@ -62,6 +62,14 @@ public class EzJoDialog extends JDialog {
 			public void mouseClicked(MouseEvent e) {
 				do_lblEzjo_mouseClicked(e);
 			}
+			@Override
+			public void mousePressed(MouseEvent e) {
+				do_lblEzjo_mousePressed(e);
+			}
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				do_lblEzjo_mouseReleased(e);
+			}
 		});
 		lblEzjo.setIcon(new ImageIcon(EzJoDialog.class.getResource("/hu/prometheus/fubar/res/Ez jo gomb.png")));
 		lblEzjo.setBounds(64, 433, 351, 63);
@@ -80,5 +88,11 @@ public class EzJoDialog extends JDialog {
 		else if (tipus == Kartya.AKCIO)     DataBase.insertAkcioTipp(tipp);
 		else if (tipus == Kartya.IGYON_AKI) DataBase.insertIgyonAkiTipp(tipp);
 		this.dispose();
+	}
+	protected void do_lblEzjo_mousePressed(MouseEvent e) {
+		lblEzjo.setIcon(new ImageIcon(DrawFrame.class.getResource("/hu/prometheus/fubar/res/Ez jo gomb L.png")));
+	}
+	protected void do_lblEzjo_mouseReleased(MouseEvent e) {
+		lblEzjo.setIcon(new ImageIcon(DrawFrame.class.getResource("/hu/prometheus/fubar/res/Ez jo gomb.png")));
 	}
 }

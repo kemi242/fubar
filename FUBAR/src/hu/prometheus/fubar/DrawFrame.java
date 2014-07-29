@@ -73,6 +73,14 @@ public class DrawFrame extends JFrame {
 			public void mouseClicked(MouseEvent arg0) {
 				do_lblNincsjelen_mouseClicked(arg0);
 			}
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				do_lblNincsjelen_mousePressed(arg0);
+			}
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				do_lblNincsjelen_mouseReleased(e);
+			}
 		});
 		
 		lblKartyahat = new JLabel("");
@@ -161,5 +169,11 @@ public class DrawFrame extends JFrame {
 			cd.setVisible(true);
 			this.dispose();
 		}
+	}
+	protected void do_lblNincsjelen_mousePressed(MouseEvent arg0) {
+		lblNincsjelen.setIcon(new ImageIcon(DrawFrame.class.getResource("/hu/prometheus/fubar/res/Nincs jelen L.png")));
+	}
+	protected void do_lblNincsjelen_mouseReleased(MouseEvent e) {
+		lblNincsjelen.setIcon(new ImageIcon(DrawFrame.class.getResource("/hu/prometheus/fubar/res/Nincs jelen.png")));
 	}
 }

@@ -55,6 +55,14 @@ public class MenuDialog extends JDialog {
 			public void mouseClicked(MouseEvent arg0) {
 				do_lblUjjatekos_mouseClicked(arg0);
 			}
+			@Override
+			public void mousePressed(MouseEvent e) {
+				do_lblUjjatekos_mousePressed(e);
+			}
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				do_lblUjjatekos_mouseReleased(e);
+			}
 		});
 		lblUjjatekos.setIcon(new ImageIcon(MenuDialog.class.getResource("/hu/prometheus/fubar/res/uj jatekos gomb.png")));
 		lblUjjatekos.setBounds(92, 237, 295, 126);
@@ -65,6 +73,14 @@ public class MenuDialog extends JDialog {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				do_lblKiall_mouseClicked(e);
+			}
+			@Override
+			public void mousePressed(MouseEvent e) {
+				do_lblKiall_mousePressed(e);
+			}
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				do_lblKiall_mouseReleased(e);
 			}
 		});
 		lblKiall.setIcon(new ImageIcon(MenuDialog.class.getResource("/hu/prometheus/fubar/res/kiall gomb.png")));
@@ -99,6 +115,26 @@ public class MenuDialog extends JDialog {
 			PlayerExitDialog ped = new PlayerExitDialog();
 			ped.setVisible(true);
 			this.dispose();
+		}
+	}
+	protected void do_lblUjjatekos_mousePressed(MouseEvent e) {
+		if (DataBase.players.size() < 8) {
+			lblUjjatekos.setIcon(new ImageIcon(MenuDialog.class.getResource("/hu/prometheus/fubar/res/uj jatekos gomb L.png")));
+		}
+	}
+	protected void do_lblUjjatekos_mouseReleased(MouseEvent e) {
+		if (DataBase.players.size() < 8) {
+			lblUjjatekos.setIcon(new ImageIcon(MenuDialog.class.getResource("/hu/prometheus/fubar/res/uj jatekos gomb.png")));
+		}
+	}
+	protected void do_lblKiall_mousePressed(MouseEvent e) {
+		if (DataBase.players.size() > 3) {
+			lblKiall.setIcon(new ImageIcon(MenuDialog.class.getResource("/hu/prometheus/fubar/res/kiall gomb L.png")));
+		}
+	}
+	protected void do_lblKiall_mouseReleased(MouseEvent e) {
+		if (DataBase.players.size() > 3) {
+			lblKiall.setIcon(new ImageIcon(MenuDialog.class.getResource("/hu/prometheus/fubar/res/kiall gomb.png")));
 		}
 	}
 }

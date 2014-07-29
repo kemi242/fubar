@@ -335,6 +335,14 @@ public class StartFrame extends JFrame {
 			public void mouseClicked(MouseEvent e) {
 				do_lblMehet_mouseClicked(e);
 			}
+			@Override
+			public void mousePressed(MouseEvent e) {
+				do_lblMehet_mousePressed(e);
+			}
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				do_lblMehet_mouseReleased(e);
+			}
 		});
 		lblMehet.setIcon(new ImageIcon(StartFrame.class.getResource("/hu/prometheus/fubar/res/Mehet gomb.png")));
 		lblMehet.setBounds(138, 685, 204, 76);
@@ -532,5 +540,11 @@ public class StartFrame extends JFrame {
 	}
 	protected void do_textField8_actionPerformed(ActionEvent e) {
 		addPlayer(textField8);
+	}
+	protected void do_lblMehet_mousePressed(MouseEvent e) {
+		lblMehet.setIcon(new ImageIcon(StartFrame.class.getResource("/hu/prometheus/fubar/res/Mehet gomb L.png")));
+	}
+	protected void do_lblMehet_mouseReleased(MouseEvent e) {
+		lblMehet.setIcon(new ImageIcon(StartFrame.class.getResource("/hu/prometheus/fubar/res/Mehet gomb.png")));
 	}
 }

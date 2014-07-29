@@ -64,6 +64,14 @@ public class SorsolasDialog extends JDialog {
 			public void mouseClicked(MouseEvent e) {
 				do_lblMegvolt_mouseClicked(e);
 			}
+			@Override
+			public void mousePressed(MouseEvent e) {
+				do_lblMegvolt_mousePressed(e);
+			}
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				do_lblMegvolt_mouseReleased(e);
+			}
 		});
 		lblMegvolt.setIcon(new ImageIcon(SorsolasDialog.class.getResource("/hu/prometheus/fubar/res/Megvolt gomb.png")));
 		lblMegvolt.setBounds(112, 675, 256, 76);
@@ -82,5 +90,11 @@ public class SorsolasDialog extends JDialog {
 	protected void do_lblMegvolt_mouseClicked(MouseEvent e) {
 		SoundPlayer.play(SorsolasDialog.class.getResource("/hu/prometheus/fubar/res/Sorsol.wav"));
 		this.dispose();
+	}
+	protected void do_lblMegvolt_mousePressed(MouseEvent e) {
+		lblMegvolt.setIcon(new ImageIcon(SorsolasDialog.class.getResource("/hu/prometheus/fubar/res/Megvolt gomb L.png")));
+	}
+	protected void do_lblMegvolt_mouseReleased(MouseEvent e) {
+		lblMegvolt.setIcon(new ImageIcon(SorsolasDialog.class.getResource("/hu/prometheus/fubar/res/Megvolt gomb.png")));
 	}
 }

@@ -75,6 +75,14 @@ public class CardDialog extends JDialog {
 			public void mouseClicked(MouseEvent e) {
 				do_lblMegvolt_mouseClicked(e);
 			}
+			@Override
+			public void mousePressed(MouseEvent e) {
+				do_lblMegvolt_mousePressed(e);
+			}
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				do_lblMegvolt_mouseReleased(e);
+			}
 		});
 		lblMegvolt.setIcon(new ImageIcon(CardDialog.class.getResource("/hu/prometheus/fubar/res/Megvolt gomb.png")));
 		lblMegvolt.setBounds(20, 685, 256, 76);
@@ -85,6 +93,14 @@ public class CardDialog extends JDialog {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				do_lblSorsolas_mouseClicked(arg0);
+			}
+			@Override
+			public void mousePressed(MouseEvent e) {
+				do_lblSorsolas_mousePressed(e);
+			}
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				do_lblSorsolas_mouseReleased(e);
 			}
 		});
 		lblSorsolas.setIcon(new ImageIcon(CardDialog.class.getResource("/hu/prometheus/fubar/res/Sorsolas gomb.png")));
@@ -103,7 +119,7 @@ public class CardDialog extends JDialog {
 		lblBar.setBounds(0, 0, 480, 800);
 		getContentPane().add(lblBar);
 		
-		if (kartya.getTipus() == Kartya.SORSOL) {
+		if (kartya.getTipus() == Kartya.SORSOL || kartya.getTipus() == Kartya.AKCIO || kartya.getTipus() == Kartya.KERDES) {
 			lblMegvolt.setVisible(false);
 			lblSorsolas.setVisible(true);
 		}
@@ -178,5 +194,17 @@ public class CardDialog extends JDialog {
 		gf.setVisible(true);
 		this.dispose();
 		SoundPlayer.play(MainFrame.class.getResource("/hu/prometheus/fubar/res/Sorsol.wav"));
+	}
+	protected void do_lblMegvolt_mousePressed(MouseEvent e) {
+		lblMegvolt.setIcon(new ImageIcon(CardDialog.class.getResource("/hu/prometheus/fubar/res/Megvolt gomb L.png")));
+	}
+	protected void do_lblMegvolt_mouseReleased(MouseEvent e) {
+		lblMegvolt.setIcon(new ImageIcon(CardDialog.class.getResource("/hu/prometheus/fubar/res/Megvolt gomb.png")));
+	}
+	protected void do_lblSorsolas_mousePressed(MouseEvent e) {
+		lblMegvolt.setIcon(new ImageIcon(CardDialog.class.getResource("/hu/prometheus/fubar/res/Sorsolas gomb L.png")));
+	}
+	protected void do_lblSorsolas_mouseReleased(MouseEvent e) {
+		lblMegvolt.setIcon(new ImageIcon(CardDialog.class.getResource("/hu/prometheus/fubar/res/Sorsolas gomb.png")));
 	}
 }
